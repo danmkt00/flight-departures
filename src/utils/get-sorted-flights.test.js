@@ -10,12 +10,33 @@ describe('getSortedFlights', () => {
             ]
         };
 
-        const result = getSortedFlights(input);
+        const result = getSortedFlights(input, 'departureDate');
 
         expect(result.flights).toEqual([
             { id: 2, departureDate: "2023-12-01T08:30:00Z", destination: "New York" },
             { id: 3, departureDate: "2024-03-22T15:45:00Z", destination: "Tokyo" },
             { id: 1, departureDate: "2025-06-15T10:00:00Z", destination: "London" }
+        ]);
+    });
+
+    test('sorts flights by destination', () => {
+        const input = {
+            flights: [
+                { id: 1, departureDate: "2025-06-15T10:00:00Z", destination: "London" },
+                { id: 2, departureDate: "2024-03-22T15:45:00Z", destination: "Tokyo" },
+                { id: 3, departureDate: "2023-12-01T08:30:00Z", destination: "New York" },
+                { id: 4, departureDate: "2024-03-22T15:45:00Z", destination: "Tokyo" }
+                
+            ]
+        };
+
+        const result = getSortedFlights(input, 'destination');
+
+        expect(result.flights).toEqual([
+            { id: 1, departureDate: "2025-06-15T10:00:00Z", destination: "London" },
+            { id: 3, departureDate: "2023-12-01T08:30:00Z", destination: "New York" },
+            { id: 2, departureDate: "2024-03-22T15:45:00Z", destination: "Tokyo" },
+            { id: 4, departureDate: "2024-03-22T15:45:00Z", destination: "Tokyo" }
         ]);
     });
 

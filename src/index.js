@@ -1,5 +1,7 @@
 import data from './data.js';
+import getSortedFlights from './utils/get-sorted-flights.js';
 
-
-const now = new Date('2023-08-05 13:45:00',);
-console.log(now.getDate());
+// console.log(getSortedFlights(data,'plane'));
+//console.log(getSortedFlights(data,'arrivalDate' ));
+// console.log(getSortedFlights(data,'origin'));
+// console.log(getSortedFlights(data,'name'));

@@ -8,7 +8,7 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-05 14:40:00',
             destination: 'CGP',
-            stops: 0,
+            stops: 0
         },
         {
             id: 2,
@@ -18,7 +18,7 @@ const data = {
             origin: 'SFO',
             arrivalDate: '2023-08-20 12:15:00',
             destination: 'JFK',
-            stops: 0,
+            stops: 0
         },
         {
             id: 3,
@@ -28,7 +28,7 @@ const data = {
             origin: 'LAX',
             arrivalDate: '2023-08-25 18:40:00',
             destination: 'ORD',
-            stops: 1,
+            stops: 1
         },
         {
             id: 4,
@@ -38,7 +38,7 @@ const data = {
             origin: 'CGP',
             arrivalDate: '2023-08-10 10:05:00',
             destination: 'DAC',
-            stops: 0,
+            stops: 0
         },
         {
             id: 5,
@@ -48,7 +48,7 @@ const data = {
             origin: 'LHR',
             arrivalDate: '2023-08-16 02:45:00',
             destination: 'JFK',
-            stops: 1,
+            stops: 1
         },
         {
             id: 6,
@@ -58,7 +58,7 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-05 14:40:00',
             destination: 'CGP',
-            stops: 0,
+            stops: 0
         },
         {
             id: 7,
@@ -68,7 +68,7 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-30 15:40:00',
             destination: 'CGP',
-            stops: 2,
+            stops: 2
         },
         {
             id: 8,
@@ -78,7 +78,7 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-30 15:40:00',
             destination: 'CGP',
-            stops: 3,
+            stops: 3
         },
         {
             id: 9,
@@ -88,7 +88,7 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-18 14:40:00',
             destination: 'CGP',
-            stops: 0,
+            stops: 0
         },
         {
             id: 10,
@@ -98,7 +98,7 @@ const data = {
             origin: 'SFO',
             arrivalDate: '2023-08-12 12:15:00',
             destination: 'JFK',
-            stops: 0,
+            stops: 0
         },
         {
             id: 11,
@@ -108,7 +108,7 @@ const data = {
             origin: 'LAX',
             arrivalDate: '2023-08-13 18:40:00',
             destination: 'ORD',
-            stops: 1,
+            stops: 1
         },
         {
             id: 12,
@@ -118,7 +118,7 @@ const data = {
             origin: 'CGP',
             arrivalDate: '2023-08-09 10:05:00',
             destination: 'DAC',
-            stops: 0,
+            stops: 0
         },
         {
             id: 13,
@@ -128,7 +128,7 @@ const data = {
             origin: 'LHR',
             arrivalDate: '2023-08-15 02:45:00',
             destination: 'JFK',
-            stops: 1,
+            stops: 1
         },
         {
             id: 14,
@@ -138,7 +138,7 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-05 14:30:00',
             destination: 'CGP',
-            stops: 0,
+            stops: 0
         },
         {
             id: 15,
@@ -148,7 +148,7 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-16 09:40:00',
             destination: 'CGP',
-            stops: 2,
+            stops: 2
         },
         {
             id: 16,
@@ -158,7 +158,7 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-31 15:50:00',
             destination: 'CGP',
-            stops: 2,
+            stops: 2
         },
         {
             id: 17,
@@ -168,7 +168,7 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-07 20:40:00',
             destination: 'CGP',
-            stops: 0,
+            stops: 0
         },
         {
             id: 18,
@@ -178,7 +178,7 @@ const data = {
             origin: 'SFO',
             arrivalDate: '2023-08-16 12:15:00',
             destination: 'JFK',
-            stops: 0,
+            stops: 0
         },
         {
             id: 19,
@@ -188,7 +188,7 @@ const data = {
             origin: 'LAX',
             arrivalDate: '2023-08-14 16:50:00',
             destination: 'ORD',
-            stops: 1,
+            stops: 1
         },
         {
             id: 20,
@@ -198,7 +198,7 @@ const data = {
             origin: 'CGP',
             arrivalDate: '2023-08-11 10:17:00',
             destination: 'DAC',
-            stops: 0,
+            stops: 0
         },
         {
             id: 21,
@@ -208,7 +208,7 @@ const data = {
             origin: 'LHR',
             arrivalDate: '2023-08-17 02:46:00',
             destination: 'JFK',
-            stops: 1,
+            stops: 1
         },
         {
             id: 22,
@@ -218,7 +218,7 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-09 14:35:00',
             destination: 'CGP',
-            stops: 0,
+            stops: 0
         },
         {
             id: 23,
@@ -228,7 +228,7 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-27 20:40:00',
             destination: 'CGP',
-            stops: 2,
+            stops: 2
         },
         {
             id: 24,
@@ -238,9 +238,9 @@ const data = {
             origin: 'DAC',
             arrivalDate: '2023-08-02 20:40:00',
             destination: 'CGP',
-            stops: 3,
-        },
-    ],
+            stops: 3
+        }
+    ]
 };
 
 export default data;

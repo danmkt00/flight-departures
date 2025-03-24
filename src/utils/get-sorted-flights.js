@@ -9,7 +9,7 @@
 const getSortedFlights = (data, dataKey = 'departureDate') => {
     if (!data || !Array.isArray(data.flights)) return { data };
 
-    // Sort flights based on the key 
+    // Sort flights based on the key
     return {
         ...data,
         flights: data.flights

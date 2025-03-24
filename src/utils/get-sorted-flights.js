@@ -8,22 +8,34 @@
 
 const getSortedFlights = (data, dataKey = 'departureDate') => {
     if (!data || !Array.isArray(data.flights)) return { data };
-
     // Sort flights based on the key
-    if (dataKey !== 'stops') {
-        //locale compare work only with strings
-        return {
-            ...data,
-            flights: data.flights
-                .slice() // Create a copy to avoid modifying the original array
-                .sort((a, b) => a[dataKey].localeCompare(b[dataKey]))
-        };
-    } else {
+    if (dataKey === 'stops') {
+        // compare numbers
         return {
             ...data,
             flights: data.flights
                 .slice() // Create a copy to avoid modifying the original array
                 .sort((a, b) => a[dataKey] - b[dataKey])
+        };
+    } else if (dataKey === 'departureDate' || dataKey === 'arrivalDate') {
+        //compare dates
+        return {
+            ...data,
+            flights: data.flights
+                .slice() // Create a copy to avoid modifying the original array
+                .sort(
+                    (a, b) =>
+                        new Date(a[dataKey]).getTime() -
+                        new Date(b[dataKey]).getTime()
+                )
+        };
+    } else {
+        //compare strings
+        return {
+            ...data,
+            flights: data.flights
+                .slice() // Create a copy to avoid modifying the original array
+                .sort((a, b) => a[dataKey].localeCompare(b[dataKey]))
         };
     }
 };

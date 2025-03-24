@@ -1,12 +1,55 @@
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 20px;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #565454;
+h1 {
+    color: #333;
+}
+
+.website-description {
+    color: #333;
+    font-size: larger;
+}
+
+.flights-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+.flights-table th,
+.flights-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.flights-table th {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.flights-table tbody tr {
+    transition: background-color 0.3s;
+}
+
+.flights-table tbody tr:hover {
+    background-color: #fafafa;
+}
+
+.clickable-header {
+    cursor: pointer;
+    transition: opacity;
+}
+
+.clickable-header:hover {
+    opacity: 0.7;
+}
+
+.clickable-header:active {
+    opacity: 0.5;
 }

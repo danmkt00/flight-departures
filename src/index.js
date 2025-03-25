@@ -5,6 +5,10 @@ const dom = {
     flightsContainer: document.getElementById('flights-container')
 };
 
+
+const buttonState = {};
+
+
 document.addEventListener('DOMContentLoaded', () => {
     let myFlights = { ...data }; //my data with flights
 
@@ -47,16 +51,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     Object.entries(columnNames).forEach(([key, name]) => {
         const th = document.createElement('th');
-        th.textContent = name;
+        th.textContent = name + ' ↑';
         th.dataset.column = key; // Store the column key for reference
 
         th.classList.add('clickable-header'); // Add class for styling
-
         th.addEventListener('click', () => {
-            //console.log(`Clicked on column: ${key}`);
-            myFlights = getSortedFlights(myFlights, key);
-            //console.log(myFlights);  //to check the new Array
+            if(buttonState[key]){ //change the direction of the string depending on sorting
+                th.textContent = th.textContent.slice(0, -1) + '↑';
+            }else{
+                th.textContent = th.textContent.slice(0, -1) + '↓';
+            }
+
+            buttonState[key] = !buttonState[key]; //change on click the state of the button
+
+            myFlights = getSortedFlights(myFlights, key, buttonState[key]);
+
             const tbody = renderTableBody(myFlights.flights);
+
             table.replaceChild(tbody, table.querySelector('tbody'));
         });
 
